@@ -1,0 +1,55 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "weatherforecast-16d8e",
+          "appId": "1:722367885499:android:7aeb9c545b9552759f799e",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "weatherforecast-16d8e",
+          "configurations": {
+            "android": "1:722367885499:android:7aeb9c545b9552759f799e",
+            "ios": "1:722367885499:ios:422601a999a1b33f9f799e",
+            "macos": "1:722367885499:ios:422601a999a1b33f9f799e",
+            "web": "1:722367885499:web:3c3e79f97f7cefd99f799e",
+            "windows": "1:722367885499:web:134897f0ce072bfb9f799e"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

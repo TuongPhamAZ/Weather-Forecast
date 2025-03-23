@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "722367885499",
+    "project_id": "weatherforecast-16d8e",
+    "storage_bucket": "weatherforecast-16d8e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722367885499:android:7aeb9c545b9552759f799e",
+        "android_client_info": {
+          "package_name": "com.example.skycast"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGrr3s7Gp6_tezs9VKfU40oo9PMJ8OHHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
